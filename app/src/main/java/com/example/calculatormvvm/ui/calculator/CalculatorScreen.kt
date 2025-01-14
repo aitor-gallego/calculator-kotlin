@@ -1,10 +1,8 @@
 package com.example.calculatormvvm.ui.calculator
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -55,7 +53,7 @@ fun CalculatorScreen(modifier: Modifier = Modifier) {
             modifier = modifier.fillMaxSize()
         ){
             Row(modifier = modifier.fillMaxWidth()) {
-                CalculatorButton(onClick = {}, symbol = "AC", modifier = modifier.weight(1f))
+                CalculatorButton(onClick = { print("hola") }, symbol = "AC", modifier = modifier.weight(1f))
                 CalculatorButton(onClick = {}, symbol = "DEL", modifier = modifier.weight(2f))
                 CalculatorButton(onClick = {}, symbol = "/", modifier = modifier.weight(1f))
             }

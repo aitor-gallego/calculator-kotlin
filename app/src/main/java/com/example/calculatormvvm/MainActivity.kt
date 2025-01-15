@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.calculatormvvm.ui.calculator.CalculatorScreen
+import com.example.calculatormvvm.ui.calculator.CalculatorViewModel
 import com.example.calculatormvvm.ui.theme.CalculatorMVVMTheme
 
 class MainActivity :
@@ -25,7 +26,9 @@ class MainActivity :
         enableEdgeToEdge()
         setContent {
             CalculatorMVVMTheme {
-                CalculatorScreen()
+                CalculatorScreen(
+                    CalculatorViewModel()
+                )
             }
         }
     }

@@ -17,7 +17,7 @@ android {
         applicationId =
             "com.example.calculatormvvm"
         minSdk =
-            33
+            31
         targetSdk =
             34
         versionCode =

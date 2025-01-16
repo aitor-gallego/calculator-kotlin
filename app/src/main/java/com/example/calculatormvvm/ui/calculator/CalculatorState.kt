@@ -5,5 +5,7 @@ data class CalculatorState(
     val number2: String = "",
     val operation: String = "",
     var operationPressed: Boolean = false,
-    val result: Float = 0f
+    var number1Decimal: Boolean = false,
+    var number2Decimal: Boolean = false,
+    val result: String = ""
 )
